@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Yesteryear&display=swap");
+/* rgb(220, 104, 5) */
+/* rgb(242, 205, 54) */
+/* MIXINS */
+/* BASIC */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background: #e5d7cc;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* HEADER */
+header {
+  background-image: linear-gradient(to right, rgba(242, 205, 54, 0.7), rgba(220, 104, 5, 0.7)), url(header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header h1 {
+  font-size: 7rem;
+  font-family: "Yesteryear", cursive;
+  color: #333;
+}
+@media (max-width: 767px) {
+  header h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+header h1 span {
+  color: #fff;
+}
+header p {
+  font-size: 1rem;
+}
+header p a {
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* MAIN */
+main {
+  position: relative;
+  top: -150px;
+  background: #f2cd36;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+@media (max-width: 767px) {
+  main {
+    top: -50px;
+  }
+}
+main section {
+  background: #fff;
+  flex: 0 0 70%;
+}
+@media (max-width: 767px) {
+  main section {
+    flex: 0 0 100%;
+  }
+}
+main section article {
+  padding: 35px;
+}
+main section article h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  main section article h2 {
+    font-size: 2rem;
+  }
+}
+main section article h4 {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 5px;
+  font-weight: 400;
+  letter-spacing: 1;
+  margin: 10px 0;
+}
+main section article p {
+  margin-bottom: 10px;
+}
+main section article button {
+  padding: 10px 25px;
+  background: #dc6805;
+  margin-top: 30px;
+  color: #fff;
+  border: none;
+  transition: 0.3s ease;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+main section article button:hover {
+  background: #333;
+}
+main section article:nth-child(2n) {
+  background: #f7f7f7;
+}
+main aside {
+  flex: 0 0 30%;
+  padding: 35px;
+  background: #f2cd36;
+}
+@media (max-width: 767px) {
+  main aside {
+    flex: 0 0 100%;
+  }
+}
+main aside form h3 {
+  font-size: 1.5rem;
+}
+main aside form input {
+  padding: 8px;
+  margin-bottom: 20px;
+}
+main aside article {
+  margin: 20px 0;
+}
+main aside article h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+main aside article p {
+  font-size: 1rem;
+  line-height: 1.9;
+}
+main aside article ul {
+  margin: 10px 0;
+}
+main aside article ul li {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #dc6805;
+}
+main aside article ul li a {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer {
+  background: #dc6805;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+/*# sourceMappingURL=style.css.map */
